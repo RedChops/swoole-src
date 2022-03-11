@@ -117,7 +117,7 @@ struct Worker {
     /**
      * worker status, IDLE or BUSY
      */
-    uint8_t status;
+    uint8_t status = SW_WORKER_IDLE;
     uint8_t type;
     uint8_t ipc_mode;
     uint8_t child_process;
